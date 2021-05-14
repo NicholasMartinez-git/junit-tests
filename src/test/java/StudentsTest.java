@@ -2,13 +2,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StudentsTest {
-    @Test
 
+    @Test
     public void testConstructor() {
         Student nicholas = new Student(1, "Nicholas");
 
-        assertSame(1L, nicholas.getId());
-        assertSame("Nicholas", nicholas.getName());
-        assertSame(0, nicholas.getGrades().size());
+        assertEquals(1L, nicholas.getId());
+        assertEquals("Nicholas", nicholas.getName());
+        assertNotNull(nicholas);
     }
 }
